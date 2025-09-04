@@ -8,7 +8,7 @@ import { syncUser } from "@/actions/user.action";
 
 async function Navbar() {
   const user = await currentUser();
-  if (user) syncUser();
+  if (user) syncUser(); // POST
 
   return (
     <>
